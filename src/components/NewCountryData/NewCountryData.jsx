@@ -1,6 +1,7 @@
 
 
-const CountryData = ({country}) => {
+const NewCountryData = ({country}) => {
+    
     return (
         <div>
             <p>country data:{country.name.common}</p>
@@ -8,4 +9,4 @@ const CountryData = ({country}) => {
     );
 };
 
-export default CountryData;
+export default NewCountryData;

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import './Country.css'
-import CountryDetail from '../components/CountryDetail';
+import NewCountryDetails from '../components/NewCountryDetails/NewCountryDetails';
 
 const Country = ({ country, handleVisitedCountries, handleVisitedFlags }) => {
 
@@ -30,11 +30,11 @@ const Country = ({ country, handleVisitedCountries, handleVisitedFlags }) => {
             {isVisited ? 'i have already visited' : 'Want to visit'}
 
             <hr />
-            <CountryDetail>
-                country={country}
-                handleVisitedCountries={handleVisitedCountries}
-                handleVisitedFlags={handleVisitedFlags}
-            </CountryDetail>
+            <NewCountryDetails
+            country={country}
+            handleVisitedCountries={handleVisitedCountries}
+            handleVisitedFlags={handleVisitedFlags}> 
+            </NewCountryDetails>
 
         </div>
     );
