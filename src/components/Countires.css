@@ -1,0 +1,10 @@
+.countries-style{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.button-style{
+    background-color: white;
+    font: black;
+}
